@@ -16,7 +16,7 @@ void Jugador::recibirCarta(Carta carta)
 
 int Jugador::calcularEnvido()
 {
-    /*int maxEnvido = 0;
+    int maxEnvido = 0;
     for (int i = 0; i < mano.size(); ++i)
     {
         for (int j = i + 1; j < mano.size(); ++j)
@@ -28,5 +28,5 @@ int Jugador::calcularEnvido()
             }
         }
     }
-    return maxEnvido;*/
+    return maxEnvido;
 }

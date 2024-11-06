@@ -50,12 +50,12 @@ void JuegoTruco::repartirCartas()
         if (i<3)
         {
             skynet.recibirCarta(barajar[i]);
-            cout << " " << skynet.mano[i].palo << " " << skynet.mano[i].nombre << endl;
+            cout << " " << skynet.mano[i].palo << " " << skynet.mano[i].valor << endl;
         }
         else
         {
             jugador.recibirCarta(barajar[i]);
-            cout << " " << jugador.mano[i-3].palo << " " << jugador.mano[i-3].nombre << endl;
+            cout << " " << jugador.mano[i-3].palo << " " << jugador.mano[i-3].valor << endl;
         }
     }
 }

@@ -10,9 +10,9 @@ class Carta
 public:
     int id;
     string palo;
-    string nombre;
+    int valor;
 
-    Carta(int i, string p, string n);
+    Carta(int i, string p, int v);
 };
 
 #endif // CARTA_H_INCLUDED

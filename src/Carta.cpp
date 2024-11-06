@@ -2,9 +2,9 @@
 
 using namespace std;
 
-Carta::Carta(int i, string p, string n)
+Carta::Carta(int i, string p, int v)
 {
     id = i;
     palo = p;
-    nombre = n;
+    valor = v;
 }
