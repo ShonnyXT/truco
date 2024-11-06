@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1730866177 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+
+1730887384 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\juegotruco.cpp
+	<iostream>
+	<vector>
+	<ctime>
+	"../include/JuegoTruco.h"
+
+1730886478 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<vector>
+	"../include/JuegoTruco.h"
+
+1730884101 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\juegotruco.h
+	"Mazo.h"
+	"Jugador.h"
+
+1730870010 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\juegotruco.cpp
+
+1730877523 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\mazo.cpp
+	<vector>
+	<iostream>
+	"../include/Mazo.h"
+
+1730875430 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\carta.cpp
+	"../include/Carta.h"
+
+1730875457 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\carta.h
+	<iostream>
+
+1730876730 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\mazo.h
+	<vector>
+	"Carta.h"
+
+1730881319 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\jugador.cpp
+	<iostream>
+	<vector>
+	"../include/Jugador.h"
+
+1730881526 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\jugador.h
+	"Carta.h"
+
