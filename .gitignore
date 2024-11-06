@@ -1,32 +1,26 @@
-# Prerequisites
-*.d
+# Archivos y carpetas de Code::Blocks
+*.layout
+*.depend
+*.layout1
+*.cbp
+*.layout2
+*.layout3
+*.tags
 
-# Compiled Object files
-*.slo
-*.lo
+# Archivos de compilación
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
+*.exe
+*.dll
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
 *.out
-*.app
+*.class
+
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos específicos de sistema operativo
+.DS_Store
+Thumbs.db
