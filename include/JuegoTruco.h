@@ -12,6 +12,7 @@ class JuegoTruco {
         Jugador jugador;
         Jugador skynet;
         vector<Carta> barajar;
+        ProbabilidadIA decision;
 
 
     // Inicio del juego
@@ -20,6 +21,7 @@ class JuegoTruco {
     // Reparte cartas a cada mano
     void repartirCartas();
 
+    // Baraja las cartas a repartir
     void barajarCartas();
 };
 

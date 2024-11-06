@@ -19,9 +19,6 @@ Mazo::Mazo()
     }
 }
 
-// Repartir cartas
-//Repartir::
-
 // Busca una carta del mazo por id
 Carta Mazo::buscarCarta(int id)
 {
