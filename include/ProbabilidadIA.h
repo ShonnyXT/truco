@@ -5,11 +5,11 @@ using namespace std;
 
 class ProbabilidadIA {
 public:
-    bool decidirCantarEnvido(int envidoIA);
+    bool decidirCantarEnvido(int envidoSkynet);
 
     bool decidirCantarTruco();
 
-    bool aceptarEnvido(int envidoIA);
+    bool aceptarEnvido(int envidoSkynet);
 
     bool aceptarTruco();
 };

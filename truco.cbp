@@ -39,10 +39,12 @@
 		<Unit filename="include/JuegoTruco.h" />
 		<Unit filename="include/Jugador.h" />
 		<Unit filename="include/Mazo.h" />
+		<Unit filename="include/ProbabilidadIA.h" />
 		<Unit filename="src/Carta.cpp" />
 		<Unit filename="src/JuegoTruco.cpp" />
 		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/Mazo.cpp" />
+		<Unit filename="src/ProbabilidadIA.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

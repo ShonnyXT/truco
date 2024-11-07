@@ -13,9 +13,12 @@ class JuegoTruco {
         Jugador skynet;
         vector<Carta> barajar;
         ProbabilidadIA probabilidadIA;
+
         bool envidoCantado;
-        int puntosTruco;
         bool trucoCantado;
+        bool turnoSkynetPrimero;
+        int puntosTruco;
+        bool finDelJuego;
 
 
     // Inicio del juego
@@ -30,11 +33,14 @@ class JuegoTruco {
     // Cantos Truco - Envido
     void cantos();
 
+    // Alternar el valor de la variable de control
+    void alternarTurnoCanto();
+
     // Resolucion de Envidos
     void resolverEnvido();
 
     // Jugada de las manos
-    void jugarMano();
+    void jugarRonda();
 
     // Ganador de la ronda
     void determinarGanador();

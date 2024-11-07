@@ -19,8 +19,10 @@ public:
     // Recibe cartas para su mano
     void recibirCarta(Carta carta);
 
-    bool decidir(bool decidirIA);
+    // Probabilidad de decidir
+    bool decidir(bool probabilidadIA);
 
+    // Calcula envido de la mano
     int calcularEnvido();
 };
 
