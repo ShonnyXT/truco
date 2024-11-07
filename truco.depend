@@ -18,7 +18,7 @@
 	<vector>
 	"../include/JuegoTruco.h"
 
-1730884101 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\juegotruco.h
+1730953352 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\juegotruco.h
 	"Mazo.h"
 	"Jugador.h"
 
@@ -32,7 +32,7 @@
 1730875430 source:c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\src\carta.cpp
 	"../include/Carta.h"
 
-1730875457 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\carta.h
+1730953352 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\carta.h
 	<iostream>
 
 1730876730 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\mazo.h
@@ -44,8 +44,10 @@
 	<vector>
 	"../include/Jugador.h"
 
-1730881526 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\jugador.h
+1730953352 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\jugador.h
+	<iostream>
 	"Carta.h"
+	"ProbabilidadIA.h"
 
 1730935317 source:e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\src\carta.cpp
 	"../include/Carta.h"
@@ -95,4 +97,6 @@
 	<ctime>
 	<cstdlib>
 	"../include/ProbabilidadIA.h"
+
+1730953352 c:\users\jonny\documents\portafolio\tup\programaciondos\trabajopracticointegrador\truco\include\probabilidadia.h
 
