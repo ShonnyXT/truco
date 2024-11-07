@@ -4,24 +4,24 @@
 
 using namespace std;
 
-bool decidirCantarEnvido(int envidoIA)
+bool ProbabilidadIA::decidirCantarEnvido(int envidoSkynet)
 {
-    int probabilidad = (envidoIA >= 31) ? 90 : (envidoIA >= 25) ? 50 : 10;
+    int probabilidad = (envidoSkynet >= 31) ? 90 : (envidoSkynet >= 25) ? 50 : 10;
     return rand() % 100 < probabilidad;
 }
 
-bool decidirCantarTruco()
+bool ProbabilidadIA::decidirCantarTruco()
 {
     return rand() % 100 < 50;
 }
 
-bool aceptarEnvido(int envidoIA)
+bool ProbabilidadIA::aceptarEnvido(int envidoSkynet)
 {
-    int probabilidad = (envidoIA >= 31) ? 80 : (envidoIA >= 25) ? 50 : 20;
+    int probabilidad = (envidoSkynet >= 31) ? 80 : (envidoSkynet >= 25) ? 50 : 20;
     return rand() % 100 < probabilidad;
 }
 
-bool aceptarTruco()
+bool ProbabilidadIA::aceptarTruco()
 {
     return rand() % 100 < 60;
 }

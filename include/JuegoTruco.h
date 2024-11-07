@@ -12,7 +12,10 @@ class JuegoTruco {
         Jugador jugador;
         Jugador skynet;
         vector<Carta> barajar;
-        ProbabilidadIA decision;
+        ProbabilidadIA probabilidadIA;
+        bool envidoCantado;
+        int puntosTruco;
+        bool trucoCantado;
 
 
     // Inicio del juego
@@ -23,6 +26,12 @@ class JuegoTruco {
 
     // Baraja las cartas a repartir
     void barajarCartas();
+
+    // Cantos Truco - Envido
+    void cantos();
+
+    // Resolucion de Envidos
+    void resolverEnvido();
 };
 
 #endif // JUEGOTRUCO_H_INCLUDED

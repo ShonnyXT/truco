@@ -53,13 +53,13 @@
 1730935276 e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\include\carta.h
 	<iostream>
 
-1730932932 source:e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\src\juegotruco.cpp
+1730937292 source:e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\src\juegotruco.cpp
 	<iostream>
 	<vector>
 	<ctime>
 	"../include/JuegoTruco.h"
 
-1730933679 e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\include\juegotruco.h
+1730937210 e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\include\juegotruco.h
 	"Mazo.h"
 	"Jugador.h"
 
@@ -91,7 +91,7 @@
 
 1730931085 e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\include\probabilidadia.h
 
-1730932233 source:e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\src\probabilidadia.cpp
+1730937623 source:e:\datos de usuario\documentos\portafolios\tup\programaciondos\trabajopracticointegrador\truco\src\probabilidadia.cpp
 	<ctime>
 	<cstdlib>
 	"../include/ProbabilidadIA.h"
