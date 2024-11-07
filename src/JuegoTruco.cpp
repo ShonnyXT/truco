@@ -89,7 +89,7 @@ void JuegoTruco::cantos()
     // Envido de la Skynet
     if (!envidoCantado && probabilidadIA.decidirCantarEnvido(skynet.calcularEnvido()))
     {
-        cout << "Skynet canta Envido. ¿Aceptas? (1. Si, 2. No): ";
+        cout << "Skynet canta Envido. Aceptas? (1. Si, 2. No): ";
         cin >> opcion;
         if (opcion == 1)
         {
@@ -128,7 +128,7 @@ void JuegoTruco::cantos()
     // Truco de Skynet
     if (!trucoCantado && probabilidadIA.decidirCantarTruco())
     {
-        cout << "Skynet canta Truco. ¿Aceptas? (1. Si, 2. No): ";
+        cout << "Skynet canta Truco. Aceptas? (1. Si, 2. No): ";
         cin >> opcion;
         if (opcion == 1)
         {
@@ -145,18 +145,34 @@ void JuegoTruco::cantos()
     }
 }
 
-void JuegoTruco::resolverEnvido() {
-        int envidoJugador = jugador.calcularEnvido();
-        int envidoSkynet = skynet.calcularEnvido();
-        cout << "Tu envido es: " << envidoJugador << endl;
-        cout << "El envido de Skynet es: " << envidoSkynet << endl;
-        if (envidoJugador > envidoSkynet) {
-            cout << "Ganaste el envido y obtienes 2 puntos." << endl;
-            jugador.puntos += 2;
-        } else if (envidoJugador < envidoSkynet) {
-            cout << "Skynet ganó el envido y obtiene 2 puntos." << endl;
-            skynet.puntos += 2;
-        } else {
-            cout << "Empate en el envido, no se otorgan puntos." << endl;
-        }
+void JuegoTruco::resolverEnvido()
+{
+    int envidoJugador = jugador.calcularEnvido();
+    int envidoSkynet = skynet.calcularEnvido();
+    cout << "Tu envido es: " << envidoJugador << endl;
+    cout << "El envido de Skynet es: " << envidoSkynet << endl;
+    if (envidoJugador > envidoSkynet)
+    {
+        cout << "Ganaste el envido y obtienes 2 puntos." << endl;
+        jugador.puntos += 2;
     }
+    else if (envidoJugador < envidoSkynet)
+    {
+        cout << "Skynet ganó el envido y obtiene 2 puntos." << endl;
+        skynet.puntos += 2;
+    }
+    else
+    {
+        cout << "Empate en el envido, no se otorgan puntos." << endl;
+    }
+}
+
+void JuegoTruco::jugarMano()
+{
+
+}
+
+void JuegoTruco::determinarGanador()
+{
+
+}

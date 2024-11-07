@@ -32,6 +32,12 @@ class JuegoTruco {
 
     // Resolucion de Envidos
     void resolverEnvido();
+
+    // Jugada de las manos
+    void jugarMano();
+
+    // Ganador de la ronda
+    void determinarGanador();
 };
 
 #endif // JUEGOTRUCO_H_INCLUDED
