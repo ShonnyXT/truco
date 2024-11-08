@@ -34,7 +34,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename=".gitignore" />
 		<Unit filename="include/Carta.h" />
 		<Unit filename="include/JuegoTruco.h" />
 		<Unit filename="include/Jugador.h" />

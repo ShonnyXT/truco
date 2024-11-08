@@ -19,7 +19,8 @@ void JuegoTruco::iniciarJuego()
         jugarRonda();
         determinarGanador();
         system("pause");
-    }while(finDelJuego);
+    }
+    while(finDelJuego);
 }
 
 void JuegoTruco::barajarCartas()
@@ -184,14 +185,17 @@ void JuegoTruco::resolverEnvido()
     }
 }
 
-void JuegoTruco::jugarRonda() {
+void JuegoTruco::jugarRonda()
+{
     envidoCantado = false;
     trucoCantado = false;
     turnoSkynetPrimero = rand() % 2;
+    int jugadorRonda = 0, skynetRonda = 0;
 
     bool cartaUno = false, cartaDos = false, cartaTres = false;
 
-    for (int ronda = 1; ronda <= 3; ronda++) {
+    for (int ronda = 1; ronda <= 3; ronda++)
+    {
         cout << endl << "Ronda " << ronda << endl;
         cantos();
         int cartaJugador, cartaSkynet;
@@ -199,45 +203,57 @@ void JuegoTruco::jugarRonda() {
 
         bool cartaRepetida;
 
-        do {
+        do
+        {
             cin >> cartaJugador;
             cartaRepetida = false;
 
-            switch (cartaJugador) {
-                case 1:
-                    if (!cartaUno) {
-                        cartaUno = true;
-                        cartaRepetida = false;
-                    } else {
-                        cout << "Carta ya utilizada. Elige otra carta." << endl;
-                        cartaRepetida = true;
-                    }
-                    break;
-                case 2:
-                    if (!cartaDos) {
-                        cartaDos = true;
-                        cartaRepetida = false;
-                    } else {
-                        cout << "Carta ya utilizada. Elige otra carta." << endl;
-                        cartaRepetida = true;
-                    }
-                    break;
-                case 3:
-                    if (!cartaTres) {
-                        cartaTres = true;
-                        cartaRepetida = false;
-                    } else {
-                        cout << "Carta ya utilizada. Elige otra carta." << endl;
-                        cartaRepetida = true;
-                    }
-                    break;
-                default:
-                    cout << "Elige una opción correcta (1, 2, o 3)." << endl;
+            switch (cartaJugador)
+            {
+            case 1:
+                if (!cartaUno)
+                {
+                    cartaUno = true;
+                    cartaRepetida = false;
+                }
+                else
+                {
+                    cout << "Carta ya utilizada. Elige otra carta." << endl;
                     cartaRepetida = true;
-                    break;
+                }
+                break;
+            case 2:
+                if (!cartaDos)
+                {
+                    cartaDos = true;
+                    cartaRepetida = false;
+                }
+                else
+                {
+                    cout << "Carta ya utilizada. Elige otra carta." << endl;
+                    cartaRepetida = true;
+                }
+                break;
+            case 3:
+                if (!cartaTres)
+                {
+                    cartaTres = true;
+                    cartaRepetida = false;
+                }
+                else
+                {
+                    cout << "Carta ya utilizada. Elige otra carta." << endl;
+                    cartaRepetida = true;
+                }
+                break;
+            default:
+                cout << "Elige una opción correcta (1, 2, o 3)." << endl;
+                cartaRepetida = true;
+                break;
             }
 
-        } while (cartaRepetida);
+        }
+        while (cartaRepetida);
 
         Carta cartaJugada = jugador.mano[cartaJugador - 1];
         cout << "Jugaste la carta: " << cartaJugada.palo << " " << cartaJugada.valor << endl;
@@ -247,18 +263,33 @@ void JuegoTruco::jugarRonda() {
         skynet.mano.erase(skynet.mano.begin() + cartaSkynet);
         cout << "Skynet juega la carta: " << cartaSkynetJugada.palo << " " << cartaSkynetJugada.valor << endl;
 
-        if (cartaJugada.valor < cartaSkynetJugada.valor) {
+        // Verificador de rondas ganadas
+        if (jugadorRonda == 2 || skynetRonda == 2)
+        {
+            break;
+        }
+
+        if (cartaJugada.valor < cartaSkynetJugada.valor)
+        {
             cout << "Ganaste la ronda!" << endl;
-            jugador.puntos++;
-        } else if (cartaJugada.valor > cartaSkynetJugada.valor) {
+            jugadorRonda++;
+        }
+        else if (cartaJugada.valor > cartaSkynetJugada.valor)
+        {
             cout << "Skynet gano la ronda." << endl;
-            skynet.puntos++;
-        } else {
+            skynetRonda++;
+        }
+        else
+        {
             cout << "Empardo en la ronda." << endl;
         }
     }
+    if (jugadorRonda == 2){
+        jugador.puntos++;
+    }else{
+        skynet.puntos++;
+    }
 }
-
 
 void JuegoTruco::determinarGanador()
 {
